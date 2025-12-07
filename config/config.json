@@ -1,0 +1,24 @@
+[
+	{
+		"arch": "GPT-2",
+		"kernel_file": "./model_kernel/Embending_kernel",
+        "num_kernels": 175,
+        "num_iters": 2000,
+		"args": {
+			"model_name": "GPT-2",
+			"batchsize": 16,
+            "rps": 30
+		}
+	},{
+		"arch": "GPT-2",
+		"kernel_file": "./model_kernel/Decoder_kernel",
+        "num_kernels": 175,
+        "num_iters": 2000,
+		"args": {
+			"model_name": "GPT-2",
+			"batchsize": 16,
+            "rps": 30,
+			"uniform": true
+		}
+	}
+]
